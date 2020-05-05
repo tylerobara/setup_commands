@@ -35,3 +35,17 @@
 `netsh advfirewall firewall add rule name="SMB in" dir=in action=allow protocol=tcp localport=445 remoteip=10.0.0.100`
 
      #No Strike
+`netsh advfirewall firewall add rule name="No Strike" dir=out action=block remoteip=151.199.42.112,151.199.42.220`
+
+     #Enable all ICMP from an IP
+`netsh advfirewall firewall add rule name=ICMP dir=in action=allow protocol=icmpv4:any,any remoteip=10.0.0.100
+
+#Verify Firewall Configuration
+`netsh advfirewall firewall show rule name=all`
+
+#Enable Exceptions
+`netsh advfirewall firewall set allprofiles firewallpolicy blockinbound,allowoutbound`
+
+#Verify exceptions are enabled
+`netsh advfirewall show allprofiles`
+

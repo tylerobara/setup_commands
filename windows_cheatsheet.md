@@ -42,9 +42,9 @@
 
 `netsh advfirewall firewall add rule name=ICMP dir=in action=allow protocol=icmpv4:any,any remoteip=10.0.0.100`
 
-#Verify Firewall Configuration
+#Verify Firewall Configuration, save output
 
-`netsh advfirewall firewall show rule name=all`
+`netsh advfirewall firewall show rule name=all > showallrules.txt`
 
 #Enable Exceptions - Allow inbound exceptions
 
@@ -54,9 +54,9 @@
 
 `netsh advfirewall firewall delete rule name=all`
 
-#Verify exceptions are enabled
+#Verify exceptions are enabled, save output
 
-`netsh advfirewall show allprofiles`
+`netsh advfirewall show allprofiles > allprofiles.txt`
 
 #Set Static IP Address
 
@@ -73,5 +73,4 @@
 `netsh interface ipv4 add dns <Adapter> <DNS Server> index=2`
 
 `netsh interface ipv4 set dnsservers <Adapter> dhcp`
-
 

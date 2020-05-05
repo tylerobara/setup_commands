@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Check Hostname
 hostname
 
@@ -12,3 +14,18 @@ sudo vi /etc/trusted.hosts
 
 #Edit the target.hosts
 sudo vi /etc/trusted.hosts
+
+#Edit the exclude.hosts file
+sudo vi /etc/exclude.hosts
+
+#Enable firewall exceptions
+sudo set_firewall -tt -it <Port(s)>
+
+#Show Network Address configuration information
+ip a
+
+#Show routes
+ip r
+
+#Show DNS configuration
+cat /etc/resolv.conf

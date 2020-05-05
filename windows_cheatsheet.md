@@ -74,3 +74,7 @@
 
 `netsh interface ipv4 set dnsservers <Adapter> dhcp`
 
+#Operator Accountability - Wireshark
+`Capture -> Start Capture`
+
+

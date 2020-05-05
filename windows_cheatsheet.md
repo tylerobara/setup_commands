@@ -44,7 +44,7 @@
 
 `netsh advfirewall firewall show rule name=all`
 
-#Enable Exceptions
+#Enable Exceptions - Allow inbound exceptions
 
 `netsh advfirewall firewall set allprofiles firewallpolicy blockinbound,allowoutbound`
 

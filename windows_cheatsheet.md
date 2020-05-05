@@ -1,10 +1,10 @@
 #Change Hostname from CMD
 
-     `wmic computersystem where name="%computername%" call rename name="<your_hostname>"`
+`wmic computersystem where name="%computername%" call rename name="<your_hostname>"`
 
 #Start the Firewall
 
-     `net start "windows defender firewall"`
+`net start "windows defender firewall"`
 
 #Enable the Windows Firewall Profiles
 

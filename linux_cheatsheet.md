@@ -49,3 +49,11 @@
 #Active Scanning Method - fping
 
 `fping -a -q -g <NETWORK/CIDR>`
+
+#Active Scanning Method - nmap
+
+`sudo nmap -O -iL <range.txt> -oG os_scan.txt`
+
+`sudo nmap -O <ip>`
+
+`diff <yesterday_filename> <today_filename>` #Show changes in alives

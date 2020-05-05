@@ -28,7 +28,7 @@
 
 `netsh advfirewall firewall add rule name=<name> dir=out action=<allow/block> protocol=<protocol> localport=<port> remoteip=<IP>`
 
-#Examples
+##Examples
 
 #Allow SMB from 10.0.0.100
 

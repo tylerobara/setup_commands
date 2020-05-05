@@ -1,0 +1,14 @@
+#Check Hostname
+hostname
+
+#Set hostname
+hostnamectl set-hostname <your_hostname>
+
+#Verify firewall settings
+sudo iptables -nL -v --line-numbers
+
+#Edit the trusted.hosts
+sudo vi /etc/trusted.hosts
+
+#Edit the target.hosts
+sudo vi /etc/trusted.hosts

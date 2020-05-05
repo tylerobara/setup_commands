@@ -50,6 +50,10 @@
 
 `netsh advfirewall firewall set allprofiles firewallpolicy blockinbound,allowoutbound`
 
+#Flush existing rules
+
+`netsh advfirewall firewall delete rule name=all`
+
 #Verify exceptions are enabled
 
 `netsh advfirewall show allprofiles`
@@ -69,3 +73,5 @@
 `netsh interface ipv4 add dns <Adapter> <DNS Server> index=2`
 
 `netsh interface ipv4 set dnsservers <Adapter> dhcp`
+
+

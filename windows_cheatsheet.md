@@ -54,3 +54,18 @@
 
 `netsh advfirewall show allprofiles`
 
+#Set Static IP Address
+
+`netsh interface ipv4 set address <adaptername> static <IP> <Netmask> <Gateway> <GW metric>`
+
+#Set DHCP - (not common)
+
+`netsh interface ipv4 set address <Adapter> dhcp`
+
+#Configure Windows DNS
+
+`netsh interface ipv4 set dnsservers <Adapter> static <DNS Server> primary`
+
+`netsh interface ipv4 add dns <Adapter> <DNS Server> index=2`
+
+`netsh interface ipv4 set dnsservers <Adapter> dhcp`

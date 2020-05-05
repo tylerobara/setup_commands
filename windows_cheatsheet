@@ -14,5 +14,9 @@ netsh advfirewall set allprofiles firewallpolicy blockinboundalways,allowoutboun
 netsh advfirewall firewall delete rule name=all
 
 #Remove a firewall exception called "Samba Stuff"
-netsh advfirewall firewall delete rule name="Samba Stuff"
+netsh advfirewall firewall delete rule name="Samba Stuff" (dir=<in/out)
+
+#Adding Exceptions
+netsh advfirewall firewall add rule name=<name> dir=in action=<allow/block> protocol=<protocol> localport=<port> remoteip=<IP>
+netsh advfirewall firewall add rule name=<name> dir=out action=<allow/block> protocol=<protocol> localport=<port> remoteip=<IP>
 

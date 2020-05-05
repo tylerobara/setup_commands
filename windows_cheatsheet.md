@@ -25,6 +25,7 @@
 #Adding Exceptions
 
 `netsh advfirewall firewall add rule name=<name> dir=in action=<allow/block> protocol=<protocol> localport=<port> remoteip=<IP>`
+
 `netsh advfirewall firewall add rule name=<name> dir=out action=<allow/block> protocol=<protocol> localport=<port> remoteip=<IP>`
 
 #Examples

@@ -41,11 +41,14 @@
 `netsh advfirewall firewall add rule name=ICMP dir=in action=allow protocol=icmpv4:any,any remoteip=10.0.0.100`
 
 #Verify Firewall Configuration
+
 `netsh advfirewall firewall show rule name=all`
 
 #Enable Exceptions
+
 `netsh advfirewall firewall set allprofiles firewallpolicy blockinbound,allowoutbound`
 
 #Verify exceptions are enabled
+
 `netsh advfirewall show allprofiles`
 

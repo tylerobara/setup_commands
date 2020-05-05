@@ -1,10 +1,10 @@
 #Change Hostname from CMD
 
-`wmic computersystem where name="%computername%" call rename name="<your_hostname>"`
+     `wmic computersystem where name="%computername%" call rename name="<your_hostname>"`
 
 #Start the Firewall
 
-`net start "windows defender firewall"`
+     `net start "windows defender firewall"`
 
 #Enable the Windows Firewall Profiles
 
@@ -30,14 +30,16 @@
 
 #Examples
 
-     #Allow SMB from 10.0.0.100
+#Allow SMB from 10.0.0.100
 
 `netsh advfirewall firewall add rule name="SMB in" dir=in action=allow protocol=tcp localport=445 remoteip=10.0.0.100`
 
-     #No Strike
+#No Strike
+
 `netsh advfirewall firewall add rule name="No Strike" dir=out action=block remoteip=151.199.42.112,151.199.42.220`
 
-     #Enable all ICMP from an IP
+#Enable all ICMP from an IP
+
 `netsh advfirewall firewall add rule name=ICMP dir=in action=allow protocol=icmpv4:any,any remoteip=10.0.0.100`
 
 #Verify Firewall Configuration

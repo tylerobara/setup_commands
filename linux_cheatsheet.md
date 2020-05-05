@@ -52,7 +52,7 @@
 
 #Active Scanning Method - nmap
 
-`sudo nmap -O -iL <range.txt> -oG os_scan.txt`
+`sudo nmap -O -iL <range.txt> -oG os_scan.txt` #( -O => OS Scan, -p 1-1024 => Ports 1-1024, -sV => Services)
 
 `sudo nmap -O <ip>`
 

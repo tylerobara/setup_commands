@@ -48,7 +48,7 @@
 
 #Active Scanning Method - fping
 
-`fping -a -q -g <NETWORK/CIDR>`
+`fping -a -q -g <NETWORK/CIDR>` #( -a => alives, -q => quiet, -g => generate range from subnet)
 
 #Active Scanning Method - nmap
 

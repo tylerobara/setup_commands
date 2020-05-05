@@ -1,0 +1,18 @@
+#Change Hostname from CMD
+wmic computersystem where name="%computername%" call rename name="<your_hostname>"
+
+#Start the Firewall
+net start "windows defender firewall"
+
+#Enable the Windows Firewall Profiles
+netsh advfirewall set allprofiles state on
+
+#Force all profiles to block all inbound traffic
+netsh advfirewall set allprofiles firewallpolicy blockinboundalways,allowoutbound
+
+#Remove all firewall exceptions
+netsh advfirewall firewall delete rule name=all
+
+#Remove a firewall exception called "Samba Stuff"
+netsh advfirewall firewall delete rule name="Samba Stuff"
+

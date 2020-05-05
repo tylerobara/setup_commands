@@ -18,8 +18,11 @@ sudo vi /etc/trusted.hosts
 #Edit the exclude.hosts file
 sudo vi /etc/exclude.hosts
 
-#Enable firewall exceptions
-sudo set_firewall -tt -it <Port(s)>
+#Enable firewall exceptions without ports
+sudo set_firewall
+
+#Enable firewall exceptions with ports
+sudo set_firewall -tt -it <Port1,Port2>
 
 #Show Network Address configuration information
 ip a

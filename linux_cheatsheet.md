@@ -45,3 +45,7 @@
 #Operator Accountability - TCPDump
 
 `sudo tcpdump -n -i <interface> -w <filename.pcap>`
+
+#Active Scanning Method - fping
+
+`fping -a -q -g <NETWORK/CIDR>`

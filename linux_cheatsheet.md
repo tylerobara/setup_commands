@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #Check Hostname
 hostname
 
@@ -32,3 +30,6 @@ ip r
 
 #Show DNS configuration
 cat /etc/resolv.conf
+
+#Operator Accountability - TCPDump
+sudo tcpdump -n -i <interface> -w <filename.pcap>
